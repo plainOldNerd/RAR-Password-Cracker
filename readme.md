@@ -2,7 +2,7 @@
 
 Embarrassingly (hilariously depending on from whose perspective) I decided to develop this app and get some experimental data **BEFORE** doing a time complexity analysis. After developing the app I discovered that cracking the password ~ took 30 seconds, ~~ took 30 minutes, and a few hours into cracking ~~~ I decided to do a pen and paper analysis and found that it may take 2.25 days!
 
-For a charSet (character set to be tested) of size 87 a pwd (password) of length l would take 87^l operations, so that if one operation were to take one centisecond (which it takes a bit longer), then a pwd of length 127 would take *6.6045 x 10^236 years* to crack. The reduced charSet of length 62 being only alphanumeric characters would still, for a pwd of length 127, take *1.3634 x 10^218 years* to crack.
+For a charSet (character set to be tested) of size 87 a pwd (password) of length L would take 87^L operations, so that if one operation were to take one centisecond (which it takes a bit longer), then a pwd of length 127 would take *6.6045 x 10^236 years* to crack. The reduced charSet of length 62 being only alphanumeric characters would still, for a pwd of length 127, take *1.3634 x 10^218 years* to crack.
 
 In short, I had forgotten how trying to crack passwords like this is futile!!
 
@@ -17,6 +17,7 @@ This app is really a testing mode version. After the brief analysis mentioned in
 ## Thirdly – Acknowledgements
 
 1) [This tutorial](http://www.tutorialspoint.com/batch_script/) is a little hard to understand in parts, but gave me most of what I needed to know
+
 2) [This site](http://ss64.com/nt/setlocal.html) and some of its links helped me to understand the *very* essential “setlocal enabledelayedexpansion” and “endlocal & set (…)” commands.
 
 ## Last and Least
